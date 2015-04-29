@@ -1,16 +1,38 @@
-.container {
-	position: center;
-	width: cover;
-	height: cover;
-	display: block;
-	margin: 0 auto;
-	}
+.containerblog {
+	background-image: image-url('color1.png');
+	height: 300px;
+	width: 900px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	padding: 50px;
+}
 
 .innercontainer {
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: rgb(32, 253, 192);
+	color: rgb(191, 67, 191);
+	text-align: center;
+	height: 260px;
+	width: 860px;
+	margin: auto;
+	border: rgb(36, 36, 36) solid 8px;
+}		
+
+.form {
+	text-align: center;
+	width: 50%;
+	height: 100%;
 	background-color: rgba(240, 248, 255, .8);
 	padding-top: 50px;
 	padding-bottom: 50px;
 	border-radius: 5px;
-	margin-left: 100px;
-	margin-right: 100px;
-}		
+	margin: auto;
+	margin-top: 10%;
+}
+
+body {
+	text-align: center;
+}

@@ -1,17 +1,14 @@
+<%= link_to "Add Post", new_blog_path %>
 <% @blogs.each do |blog|%>
-	<div class="container">
-	<li class="innercontainer">
-		<strong><a href="/blog/<%= blog.id %>"><%= blog.title %></a></strong>
+	<div class="containerblog">
+	<li class="innercontainer" style="list-style-type: none; font-size: 20px;">
+	<%= blog.title %>
 		<br>
 		<br>
 		<%= blog.post %>
 		<br>
 		<br>
-		<label>Author: </label><%= blog.author %>
-		<br>
 		<label>Date: </label><%= blog.date %>
-		<br>
-		<label>Time: </label><%= blog.time %>
 	</li>
 	<p>
 	<p>

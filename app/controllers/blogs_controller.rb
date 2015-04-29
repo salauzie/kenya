@@ -32,4 +32,13 @@ class BlogsController < ApplicationController
 		@blog.delete
 		redirect_to blogs_path
 	end	
+
+private
+	def blog_params
+		params.require(:blog).permit(
+			:title,
+			:post,
+			:date
+			)
+	end
 end
