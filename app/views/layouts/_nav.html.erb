@@ -1,0 +1,15 @@
+<div class="nav">
+	
+	<ul>	
+		<a href="/"><li><%= image_tag('kenya.png', :class => 'characterpic') %></li></a>
+		<li>Kenya Clay</h1>
+		<!-- <li>800.989.0000</li>
+		<li>madeupemail@gmail.com</li>
+		<li>About Me</li>
+		<li>Blog</li>
+		<li>Videos</li> -->
+		<% if user_signed_in? %>
+<li><%=link_to "Logout", destroy_user_session_path, method: :delete %></li>
+		<% end %>
+	</ul>
+</div>
