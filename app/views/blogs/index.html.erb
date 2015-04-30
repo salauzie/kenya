@@ -1,5 +1,7 @@
 <%= link_to "Home", root_path %>
+<% if user_signed_in? %>
 <%= link_to "Add Post", new_blog_path %>
+<%end%>
 <% @blogs.each do |blog|%>
 	<div class="containerblog">
 	<li class="innercontainer" style="list-style-type: none; font-size: 20px;">
@@ -9,11 +11,13 @@
 		<%= blog.post %>
 		<br>
 		<br>
-		<label>Date: </label><%= blog.date %>
+		<%= blog.date %>
 		<br>
 		<br>
+		<% if user_signed_in? %>
 		<%= link_to "Edit", edit_blog_path(blog) %>
 		<%= link_to "Delete", blog_path(blog), method: :delete %>
+		<% end %>
 	</li>
 	<p>
 	<p>

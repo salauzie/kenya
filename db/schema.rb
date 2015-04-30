@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150430035542) do
+ActiveRecord::Schema.define(version: 20150430161900) do
 
   create_table "blogs", force: :cascade do |t|
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
     t.string   "title",      limit: 255
     t.text     "post",       limit: 65535
-    t.integer  "date",       limit: 4
+    t.date     "date"
   end
 
   create_table "users", force: :cascade do |t|

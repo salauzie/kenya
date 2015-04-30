@@ -1,6 +1,6 @@
 <div class="nav">
-
-	<ul>
+	
+	<ul>	
 		<li><%= image_tag('kenya.png', :class => 'characterpic') %></li>
 		<li>Kenya Clay</h1>
 		<!-- <li>800.989.0000</li>
@@ -8,6 +8,9 @@
 		<li>About Me</li>
 		<li>Blog</li>
 		<li>Videos</li> -->
+		<% if user_signed_in? %>
+<li><%=link_to "Logout", destroy_user_session_path, method: :delete %></li>
+		<% end %>
 	</ul>
 </div>
 
@@ -38,13 +41,13 @@
 </div>
 
 
-<div class="contact">
+<!-- <div class="contact">
 	<div class="container">
 		<div class="container1">
 		<p></p>
 	</div>
 	</div>
-</div>
+</div> -->
 
 
 <div class="social" style="margin-bottom: 70px;">

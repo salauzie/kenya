@@ -1,6 +1,6 @@
 .containerblog {
 	background-image: image-url('color1.png');
-	height: 300px;
+	height: 100%;
 	width: 900px;
 	color: white;
 	font-size: 20px;
@@ -12,10 +12,10 @@
 .innercontainer {
 	margin-left: 100px;
 	margin-right: 100px;
-	background-color: rgb(32, 253, 192);
+	background-color: rgba(32, 253, 192, .8);
 	color: rgb(191, 67, 191);
 	text-align: center;
-	height: 260px;
+	height: 100%;
 	width: 860px;
 	margin: auto;
 	border: rgb(36, 36, 36) solid 8px;
