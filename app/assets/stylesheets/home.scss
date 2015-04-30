@@ -2,7 +2,8 @@
 	background-color: rgb(32, 253, 192);
 	width: 100%;
 	height: 210px;
-
+	font-family: Dimitri;
+	font-size: 70px;
 }
 
 .nav ul {
@@ -18,7 +19,6 @@
 .nav li {
 	display: inline;
 	padding: 10px;
-	font-size: 40px;
 	font-weight: 900;
 	vertical-align: middle;
 }
@@ -127,6 +127,16 @@ body {
 	border: rgb(36, 36, 36) solid 8px;
 }
 
+
+///fonts
+
+
+@font-face {
+font-family:"Dimitri";
+src:url("../DIMIS___.eot");
+src:local("Dimitri"),
+    url("../DIMIS___.ttf")format("truetype");
+    }
 ///responsive
 
 @media screen and (max-width:375px) {
