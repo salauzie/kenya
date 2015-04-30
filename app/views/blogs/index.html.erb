@@ -1,3 +1,4 @@
+<%= link_to "Home", root_path %>
 <%= link_to "Add Post", new_blog_path %>
 <% @blogs.each do |blog|%>
 	<div class="containerblog">
@@ -9,6 +10,10 @@
 		<br>
 		<br>
 		<label>Date: </label><%= blog.date %>
+		<br>
+		<br>
+		<%= link_to "Edit", edit_blog_path(blog) %>
+		<%= link_to "Delete", blog_path(blog), method: :delete %>
 	</li>
 	<p>
 	<p>
