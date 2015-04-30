@@ -1,5 +1,5 @@
 <h2>Log in</h2>
-<div class="login" style="width: 50%; height: 100%; background: red; margin: auto;">
+<div class="login" style="width: 50%; height: 100%; background: red; margin: auto; border-radius: 5px; padding-bottom: 10px; padding-top: 10px;">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -22,6 +22,7 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %>
-
+<% if user_signed_in? %>
 <%= render "devise/shared/links" %>
+<% end %>
 </div>

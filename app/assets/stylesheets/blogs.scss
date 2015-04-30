@@ -36,3 +36,9 @@
 body {
 	text-align: center;
 }
+
+///responsive
+
+@media screen and (max-width:375px) {
+	body, .form, .innercontainer, .containerblog { max-width: 320px;}
+}
