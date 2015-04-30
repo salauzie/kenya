@@ -1,0 +1,2 @@
+module ClassvideosHelper
+end
