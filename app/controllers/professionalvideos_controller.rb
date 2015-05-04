@@ -36,10 +36,9 @@ class ProfessionalvideosController < ApplicationController
 private
 	def blog_params
 		params.require(:professionalvideo).permit(
-			:title,
-			:post,
-			:date
+			:photo,
+			:post
 			)
 	end
 end
-end
+

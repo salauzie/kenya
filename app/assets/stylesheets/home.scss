@@ -3,7 +3,7 @@
 	width: 100%;
 	height: 210px;
 	font-family: Dimitri;
-	font-size: 70px;
+	font-size: 20px;
 }
 
 .nav ul {
@@ -139,6 +139,8 @@ src:local("Dimitri"),
     }
 ///responsive
 
-@media screen and (max-width:375px) {
-	.social, .container, .contact, .container1, .blog, .teach, .kenyaabout, .instansive-widget, .grid-about, .grid-class, .grid-blog, .grid-insta, .one, .two, .push, body, .characterpic, html, .nav { max-width: 320px;}
+@media screen and (max-width:320px) {
+	.social, .container, .contact, .container1, .blog, .teach, .kenyaabout, .instansive-widget, .grid-about, .grid-class, .grid-blog, .grid-insta, .one, .two, .push, body, .characterpic, html, .nav { max-width: 320px;
+	margin: 0px;
+	padding: 0px;}
 }

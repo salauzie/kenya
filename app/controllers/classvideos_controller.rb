@@ -5,26 +5,26 @@ class ClassvideosController < ApplicationController
 	end
 
 	def new
-		@classvideo = ClassvideoClassvideo.new
+		@classvideo = Classvideo.new
 	end
 
 	def show
-		@classvideoclassvideo = classvideoclassvideo.find params[:id]
+		@classvideo = classvideo.find params[:id]
 	end
 	
 	def edit
-		@classvideoclassvideo = ClassvideoClassvideo.find params[:id]
+		@classvideo = Classvideo.find params[:id]
 	end	
 
 	def update
-		@classvideoclassvideo = Classvideo.find params[:id]
-		@classvideoclassvideo.update_attributes classvideo_params
+		@classvideo = Classvideo.find params[:id]
+		@classvideo.update_attributes classvideo_params
 		redirect_to classvideos_path
 	end
 	
 	def create
-		@classvideo = Classvideo.create blog_params
-		redirect_to blogs_path
+		@classvideo = Classvideo.create classvideo_params
+		redirect_to classvideos_path
 	end	
 
 	def destroy
@@ -36,10 +36,9 @@ class ClassvideosController < ApplicationController
 private
 	def classvideo_params
 		params.require(:classvideo).permit(
-			:title,
 			:post,
-			:date
+			:image
 			)
 	end
 end
-end
+

@@ -10,6 +10,7 @@
 		<li>Videos</li> -->
 		<% if user_signed_in? %>
 		<li><%= link_to "Add Post", new_blog_path %></li>
+		<li><%= link_to "Add Class Video", new_classvideo_path %></li>
 <li><%=link_to "Logout", destroy_user_session_path, method: :delete %></li>
 
 		<% end %>
