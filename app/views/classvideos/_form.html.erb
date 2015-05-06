@@ -1,11 +1,7 @@
 <%= form_for @classvideo, html: { multipart: true } do |f| %>
 	<div class="form">
-    <%= f.label :post %>
-    <%= f.text_field :post %>
-    <br>
-    <br>
-    <%= f.label :image %>
-    <%= f.file_field :image %>
+    <%= f.label :video %>
+    <%= f.file_field :video %>
     <br>
     <br>
     <%= f.submit %>

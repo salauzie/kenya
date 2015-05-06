@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150504153112) do
+ActiveRecord::Schema.define(version: 20150430161900) do
 
   create_table "blogs", force: :cascade do |t|
     t.datetime "created_at",               null: false
@@ -19,16 +19,6 @@ ActiveRecord::Schema.define(version: 20150504153112) do
     t.string   "title",      limit: 255
     t.text     "post",       limit: 65535
     t.date     "date"
-  end
-
-  create_table "classvideos", force: :cascade do |t|
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.string   "post",               limit: 255
-    t.string   "image_file_name",    limit: 255
-    t.string   "image_content_type", limit: 255
-    t.integer  "image_file_size",    limit: 4
-    t.datetime "image_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

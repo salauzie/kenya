@@ -36,8 +36,7 @@ class ClassvideosController < ApplicationController
 private
 	def classvideo_params
 		params.require(:classvideo).permit(
-			:post,
-			:image
+			:video
 			)
 	end
 end
