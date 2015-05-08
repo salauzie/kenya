@@ -1,11 +1,10 @@
 <% @classvideos.each do |c|%>
 	<div class="containerblog">
 	<li class="innercontainer" style="list-style-type: none; font-size: 20px;">
-		<%= video_tag c.video.url(:medium), controls: true, type: "video/mp4" %>
+		<video controls src="<%= c.video.url %>">
+		</video>
 		<br>
-	<!-- 	<%= c.post %>
-		<br>
-		<br> -->
+
 		<% if user_signed_in? %>
 		<%= link_to "Edit", edit_classvideo_path(c) %>
 		<%= link_to "Delete", classvideo_path(c), method: :delete %>
