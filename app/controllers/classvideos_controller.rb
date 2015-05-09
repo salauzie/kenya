@@ -7,10 +7,6 @@ class ClassvideosController < ApplicationController
 	def new
 		@classvideo = Classvideo.new
 	end
-
-	def show
-		@classvideo = classvideo.find params[:id]
-	end
 	
 	def edit
 		@classvideo = Classvideo.find params[:id]
@@ -23,8 +19,12 @@ class ClassvideosController < ApplicationController
 	end
 	
 	def create
-		@classvideo = Classvideo.create classvideo_params
-		redirect_to classvideos_path
+		@classvideo = Classvideo.new(classvideo_params)
+		if @classvideo.save
+			redirect_to classvideos_path
+		else
+			render "new"
+		end		
 	end	
 
 	def destroy
